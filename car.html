@@ -54,39 +54,30 @@
       }
 
       getInfo() {
-        return {
-          id: this.id,
-          type: this.type,
-          price: this.price,
-          brand: this.brand,
-        }
+        return this.type + ', ' + this.brand
       }
-      getPrice() {
-        return {
-          price: this.price,
-        }
-      }
-    }
 
+      getPrice() {
+        return this.price
+      }
+
+    }
     class Car extends Transport {
-      constructor() {
-        getDoorsCount(type, doors) {
-          if (this.doors > 0) {
-            console.log(this.doors)
-          }
+      constructor(type, doors) {
+        getDoorsCount(){
+          return this.doors
         }
       }
     }
 
     class Bike extends Transport {
-      constructor() {
-        getMaxSpeed(type, maxSpeed) {
-          if (this.type = 'bike') {
-            console.log(this.maxSpeed)
-          }
+      constructor(type, maxSpeed) {
+        getMaxSpeed(){
+          return this.maxSpeed
         }
       }
     }
+
 
   </script>
 </body>

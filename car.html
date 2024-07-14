@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=h1, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Car</title>
 </head>
 
@@ -55,9 +55,10 @@
 
       getInfo() {
         return {
+          id: this.id,
           type: this.type,
           price: this.price,
-          brand: this.brand
+          brand: this.brand,
         }
       }
       getPrice() {
@@ -69,16 +70,20 @@
 
     class Car extends Transport {
       constructor() {
-        getDoorsCount() {
-          // return
+        getDoorsCount(type, doors) {
+          if (this.doors > 0) {
+            console.log(this.doors)
+          }
         }
       }
     }
 
     class Bike extends Transport {
       constructor() {
-        getMaxSpeed() {
-          // return
+        getMaxSpeed(type, maxSpeed) {
+          if (this.type = 'bike') {
+            console.log(this.maxSpeed)
+          }
         }
       }
     }

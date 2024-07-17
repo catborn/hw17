@@ -62,23 +62,36 @@
       }
 
     }
-    class Car extends Transport {
-      constructor(type, doors) {
-        getDoorsCount(){
-          return this.doors
-        }
-      }
-    }
+    // class Car extends Transport {
+    //   constructor(type, doors) {
+    //     getDoorsCount(){
+    //       // return this.doors
+    //     }
+    //   }
+    // }
 
-    class Bike extends Transport {
-      constructor(type, maxSpeed) {
-        getMaxSpeed(){
-          return this.maxSpeed
-        }
-      }
-    }
+    // class Bike extends Transport {
+    //   constructor(type, maxSpeed) {
+    //     getMaxSpeed(){
+    //       // return this.maxSpeed
+    //     }
+    //   }
+    // }
 
+    // ! фидбек
+    // Задание с классами только начато, но не доделано + есть ошибки в создании классов Car и Bike.
+    // При создании класса, который наследуется от другого, в конструкторе используется super(свойства, которые есть у наследуемого класса), а затем прописываются дополнительные свойства.При этом методы не прописываются в конструкторе.Например, класс Car должен был быть прописан так:
+    //     class Car extends Transport {
+    //       constructor(type, price, brand, doors) {
+    //         super(type, price, brand);
+    //         this.doors = doors;
+    //       }
+    //       getDoorsCount() {
+    //         return this.doors
+    // }
+    // }
 
+    // Класс Bike аналогично создается, только другое свойство и метод должны быть. Дальше нужно было создать объекты этих двух классов, преобразовав массив data.И затем ещё вывести информацию на экран о машинах и мотоциклах, используя как раз методы классов. Попробуй доделать это задание, если будет время)
   </script>
 </body>
 
